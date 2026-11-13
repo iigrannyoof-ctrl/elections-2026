@@ -2,11 +2,14 @@
 title: "About"
 ---
 
+```{=html}
 <div class="panel-card">
   <h3>Project purpose</h3>
   <p>This website demonstrates how a clean data story can be built around election results. The design emphasizes clarity, readability, and a polished presentation so that maps and summaries feel easy to interpret.</p>
 </div>
+```
 
+```{=html}
 <div class="feature-grid">
   <div class="feature-card">
     <h3>Data source</h3>
@@ -21,3 +24,4 @@ title: "About"
     <p>Quarto, R, and tidyverse are used to transform raw election data into a readable site with polished visuals.</p>
   </div>
 </div>
+```

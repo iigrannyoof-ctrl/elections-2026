@@ -3,7 +3,7 @@ title: "North Carolina 2024 Presidential Results Map"
 format:
   html:
     theme: cosmo
-    toc: true
+    toc: false
 execute:
   echo: false
   warning: false
@@ -11,6 +11,7 @@ execute:
 
 This map uses the official North Carolina State Board of Elections precinct-level results file for the 2024 general election. I aggregated the county totals for the two major-party presidential candidates and mapped the county-level Trump vote share across the state.
 
+```{=html}
 <div class="metric-grid">
   <div class="metric-card">
     <span class="metric-value">100</span>
@@ -28,6 +29,7 @@ This map uses the official North Carolina State Board of Elections precinct-leve
     <p>Official general election data downloaded directly from the NCSBE archive.</p>
   </div>
 </div>
+```
 
 ```{r setup}
 library(readr)
@@ -98,7 +100,9 @@ county_map |>
   theme(legend.position = "right")
 ```
 
+```{=html}
 <div class="panel-card">
   <h3>Read the map</h3>
   <p>The county map shows the general pattern of vote strength across North Carolina in 2024. Darker red counties indicate a larger share of the two-party vote for Donald J. Trump, while blue counties show stronger support for Kamala D. Harris. The layered presentation keeps the information easy to read while maintaining a cleaner depth display.</p>
 </div>
+```

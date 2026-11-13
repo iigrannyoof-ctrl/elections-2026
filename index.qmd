@@ -2,6 +2,7 @@
 title: "Techne Fall 2026"
 ---
 
+```{=html}
 <div class="hero">
   <div class="hero-panel">
     <div class="hero-tag">Election intelligence</div>
@@ -60,3 +61,4 @@ title: "Techne Fall 2026"
     <p>Layered cards, soft shadows, and glassy surfaces add visual depth without losing readability.</p>
   </div>
 </div>
+```
