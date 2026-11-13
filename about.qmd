@@ -1,0 +1,7 @@
+---
+title: "About"
+---
+
+This site is a simple Quarto website built around election analysis for the Techne Fall 2026 course project. The data file includes a small sample of state-level vote totals and turnout percentages for a fictional 2026 race snapshot.
+
+The goal is to show how a tidy data workflow can be used to summarize, visualize, and compare election results without needing a large production dataset.

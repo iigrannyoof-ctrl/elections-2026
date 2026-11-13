@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "techne-fall-2026",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "analysis.html",
+    "href": "analysis.html",
+    "title": "2026 Election Analysis",
+    "section": "",
+    "text": "This brief analysis summarizes a small sample of 2026 election results across a set of states. The goal is to compare vote totals by party and state, and to see which states are the closest contests."
+  },
+  {
+    "objectID": "analysis.html#total-votes-by-party",
+    "href": "analysis.html#total-votes-by-party",
+    "title": "2026 Election Analysis",
+    "section": "Total votes by party",
+    "text": "Total votes by party\n\n\n# A tibble: 2 × 2\n  party         votes\n  &lt;chr&gt;         &lt;dbl&gt;\n1 Democratic 30830000\n2 Republican 28710000"
+  },
+  {
+    "objectID": "analysis.html#state-by-state-comparison",
+    "href": "analysis.html#state-by-state-comparison",
+    "title": "2026 Election Analysis",
+    "section": "State-by-state comparison",
+    "text": "State-by-state comparison\n\n\n# A tibble: 8 × 5\n  state        total_votes democratic_votes republican_votes  margin\n  &lt;chr&gt;              &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt;\n1 California      15480000          8450000          7030000 1420000\n2 Texas            9200000          4200000          5000000 -800000\n3 New York         8040000          4760000          3280000 1480000\n4 Florida          6960000          3200000          3760000 -560000\n5 Pennsylvania     6080000          3120000          2960000  160000\n6 Illinois         5250000          2910000          2340000  570000\n7 Georgia          5070000          2480000          2590000 -110000\n8 Arizona          3460000          1710000          1750000  -40000"
+  },
+  {
+    "objectID": "analysis.html#closest-races",
+    "href": "analysis.html#closest-races",
+    "title": "2026 Election Analysis",
+    "section": "Closest races",
+    "text": "Closest races\nThe closest races are the ones with the smallest margins between the Democratic and Republican candidates.\n\n\n# A tibble: 8 × 3\n  state         margin winner    \n  &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;     \n1 Arizona        40000 Republican\n2 Georgia       110000 Republican\n3 Pennsylvania  160000 Democratic\n4 Florida       560000 Republican\n5 Illinois      570000 Democratic\n6 Texas         800000 Republican\n7 California   1420000 Democratic\n8 New York     1480000 Democratic\n\n\nIn this sample, the tightest contest is the one with the smallest margin between major-party candidates. These close contests are often the most informative for understanding turnout and vote-share patterns heading into election night."
+  }
+]

@@ -1,0 +1,13 @@
+---
+title: "Techne Fall 2026"
+---
+
+This project highlights a compact election analysis for the 2026 cycle using a small dataset of state-level vote totals.
+
+## Overview
+
+- Compare total votes by party
+- Review state-by-state vote totals
+- Identify the closest races in the sample
+
+The analysis page summarizes the results and includes clear charts for easy comparison. Use the navigation bar to explore the full report or read more about the project.

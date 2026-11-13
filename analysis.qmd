@@ -1,0 +1,95 @@
+---
+title: "2026 Election Analysis"
+format:
+  html:
+    theme: cosmo
+    toc: true
+execute:
+  echo: false
+  warning: false
+---
+
+This brief analysis summarizes a small sample of 2026 election results across a set of states. The goal is to compare vote totals by party and state, and to see which states are the closest contests.
+
+```{r setup}
+library(tidyverse)
+
+results <- read_csv("data/election_results.csv")
+```
+
+## Total votes by party
+
+```{r party-summary}
+party_totals <- results |>
+  group_by(party) |>
+  summarise(votes = sum(votes), .groups = "drop") |>
+  arrange(desc(votes))
+
+party_totals
+```
+
+```{r party-bar-chart}
+party_totals |>
+  ggplot(aes(x = reorder(party, votes), y = votes, fill = party)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    title = "Total votes by party",
+    x = "Party",
+    y = "Votes cast"
+  ) +
+  scale_y_continuous(labels = scales::comma) +
+  theme_minimal()
+```
+
+## State-by-state comparison
+
+```{r state-summary}
+state_summary <- results |>
+  group_by(state) |>
+  summarise(
+    total_votes = sum(votes),
+    democratic_votes = sum(votes[party == "Democratic"]),
+    republican_votes = sum(votes[party == "Republican"]),
+    margin = democratic_votes - republican_votes,
+    .groups = "drop"
+  ) |>
+  arrange(desc(total_votes))
+
+state_summary
+```
+
+```{r state-plot}
+state_summary |>
+  ggplot(aes(x = reorder(state, total_votes), y = total_votes)) +
+  geom_col(fill = "steelblue") +
+  coord_flip() +
+  labs(
+    title = "Total votes by state",
+    x = "State",
+    y = "Total votes"
+  ) +
+  scale_y_continuous(labels = scales::comma) +
+  theme_minimal()
+```
+
+## Closest races
+
+The closest races are the ones with the smallest margins between the Democratic and Republican candidates.
+
+```{r closest-races}
+closest_races <- results |>
+  group_by(state) |>
+  summarise(
+    democratic_votes = sum(votes[party == "Democratic"]),
+    republican_votes = sum(votes[party == "Republican"]),
+    margin = abs(democratic_votes - republican_votes),
+    winner = if_else(democratic_votes > republican_votes, "Democratic", "Republican"),
+    .groups = "drop"
+  ) |>
+  arrange(margin)
+
+closest_races
+```
+
+In this sample, the tightest contest is the one with the smallest margin between major-party candidates. These close contests are often the most informative for understanding turnout and vote-share patterns heading into election night.
