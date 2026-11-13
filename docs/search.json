@@ -4,48 +4,34 @@
     "href": "index.html",
     "title": "Techne Fall 2026",
     "section": "",
-    "text": "This project highlights a compact election analysis for the 2026 cycle using a small dataset of state-level vote totals."
-  },
-  {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Techne Fall 2026",
-    "section": "Overview",
-    "text": "Overview\n\nCompare total votes by party\nReview state-by-state vote totals\nIdentify the closest races in the sample\n\nThe analysis page summarizes the results and includes clear charts for easy comparison. Use the navigation bar to explore the full report or read more about the project."
+    "text": "&lt;div class=\"hero-tag\"&gt;Election intelligence&lt;/div&gt;\n&lt;h1&gt;North Carolina elections, organized into a clear visual story.&lt;/h1&gt;\n&lt;p&gt;Explore turnout, county-level vote share, and political patterns in a polished dashboard built for quick reading and presentation. This project turns raw election data into an easy-to-follow narrative.&lt;/p&gt;\n&lt;div class=\"action-row\"&gt;\n  &lt;a class=\"action-button primary\" href=\"analysis.html\"&gt;Open the analysis&lt;/a&gt;\n  &lt;a class=\"action-button secondary\" href=\"about.html\"&gt;About this project&lt;/a&gt;\n&lt;/div&gt;\n&lt;div class=\"depth-stack\"&gt;\n  &lt;div class=\"depth-box\"&gt;\n    &lt;strong&gt;Contests&lt;/strong&gt;\n    &lt;span&gt;2024&lt;/span&gt;\n  &lt;/div&gt;\n  &lt;div class=\"depth-box\"&gt;\n    &lt;strong&gt;Units&lt;/strong&gt;\n    &lt;span&gt;100+ counties&lt;/span&gt;\n  &lt;/div&gt;\n  &lt;div class=\"depth-box\"&gt;\n    &lt;strong&gt;Focus&lt;/strong&gt;\n    &lt;span&gt;Map + share&lt;/span&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;span class=\"metric-value\"&gt;3&lt;/span&gt;\n&lt;div class=\"metric-label\"&gt;Major views&lt;/div&gt;\n&lt;p&gt;Home, analysis, and project background are organized into a simple website flow.&lt;/p&gt;\n\n\n&lt;span class=\"metric-value\"&gt;1&lt;/span&gt;\n&lt;div class=\"metric-label\"&gt;Live map&lt;/div&gt;\n&lt;p&gt;The analysis page includes a county-level map built from official NCSBE election data.&lt;/p&gt;\n\n\n&lt;span class=\"metric-value\"&gt;24/7&lt;/span&gt;\n&lt;div class=\"metric-label\"&gt;Readable design&lt;/div&gt;\n&lt;p&gt;Clean contrast, layered panels, and depth styling make the results easier to scan.&lt;/p&gt;\n\n\n\n\n&lt;h3&gt;Quick comparison&lt;/h3&gt;\n&lt;p&gt;Break down electoral patterns by county and contest so differences are easy to see at a glance.&lt;/p&gt;\n\n\n&lt;h3&gt;Color-coded story&lt;/h3&gt;\n&lt;p&gt;Use a clear red-blue palette to communicate stronger support and relative vote share across regions.&lt;/p&gt;\n\n\n&lt;h3&gt;Clean depth display&lt;/h3&gt;\n&lt;p&gt;Layered cards, soft shadows, and glassy surfaces add visual depth without losing readability.&lt;/p&gt;"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This site is a simple Quarto website built around election analysis for the Techne Fall 2026 course project. The data file includes a small sample of state-level vote totals and turnout percentages for a fictional 2026 race snapshot.\nThe goal is to show how a tidy data workflow can be used to summarize, visualize, and compare election results without needing a large production dataset."
+    "text": "Project purpose\n\n\nThis website demonstrates how a clean data story can be built around election results. The design emphasizes clarity, readability, and a polished presentation so that maps and summaries feel easy to interpret.\n\n\n\n\n&lt;h3&gt;Data source&lt;/h3&gt;\n&lt;p&gt;Official North Carolina State Board of Elections results files are used for the county-level map in the analysis section.&lt;/p&gt;\n\n\n&lt;h3&gt;Design goals&lt;/h3&gt;\n&lt;p&gt;The site uses layered panels, stronger color contrast, and a contrast-friendly layout to improve the visual depth of the experience.&lt;/p&gt;\n\n\n&lt;h3&gt;Tools&lt;/h3&gt;\n&lt;p&gt;Quarto, R, and tidyverse are used to transform raw election data into a readable site with polished visuals.&lt;/p&gt;"
   },
   {
     "objectID": "analysis.html",
     "href": "analysis.html",
-    "title": "2026 Election Analysis",
+    "title": "North Carolina 2024 Presidential Results Map",
     "section": "",
-    "text": "This brief analysis summarizes a small sample of 2026 election results across a set of states. The goal is to compare vote totals by party and state, and to see which states are the closest contests."
+    "text": "This map uses the official North Carolina State Board of Elections precinct-level results file for the 2024 general election. I aggregated the county totals for the two major-party presidential candidates and mapped the county-level Trump vote share across the state."
   },
   {
-    "objectID": "analysis.html#total-votes-by-party",
-    "href": "analysis.html#total-votes-by-party",
-    "title": "2026 Election Analysis",
-    "section": "Total votes by party",
-    "text": "Total votes by party\n\n\n# A tibble: 2 × 2\n  party         votes\n  &lt;chr&gt;         &lt;dbl&gt;\n1 Democratic 30830000\n2 Republican 28710000"
+    "objectID": "analysis.html#county-level-summary",
+    "href": "analysis.html#county-level-summary",
+    "title": "North Carolina 2024 Presidential Results Map",
+    "section": "County-level summary",
+    "text": "County-level summary"
   },
   {
-    "objectID": "analysis.html#state-by-state-comparison",
-    "href": "analysis.html#state-by-state-comparison",
-    "title": "2026 Election Analysis",
-    "section": "State-by-state comparison",
-    "text": "State-by-state comparison\n\n\n# A tibble: 8 × 5\n  state        total_votes democratic_votes republican_votes  margin\n  &lt;chr&gt;              &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt;\n1 California      15480000          8450000          7030000 1420000\n2 Texas            9200000          4200000          5000000 -800000\n3 New York         8040000          4760000          3280000 1480000\n4 Florida          6960000          3200000          3760000 -560000\n5 Pennsylvania     6080000          3120000          2960000  160000\n6 Illinois         5250000          2910000          2340000  570000\n7 Georgia          5070000          2480000          2590000 -110000\n8 Arizona          3460000          1710000          1750000  -40000"
-  },
-  {
-    "objectID": "analysis.html#closest-races",
-    "href": "analysis.html#closest-races",
-    "title": "2026 Election Analysis",
-    "section": "Closest races",
-    "text": "Closest races\nThe closest races are the ones with the smallest margins between the Democratic and Republican candidates.\n\n\n# A tibble: 8 × 5\n  state        democratic_votes republican_votes  margin winner    \n  &lt;chr&gt;                   &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;     \n1 Arizona               1710000          1750000   40000 Republican\n2 Georgia               2480000          2590000  110000 Republican\n3 Pennsylvania          3120000          2960000  160000 Democratic\n4 Florida               3200000          3760000  560000 Republican\n5 Illinois              2910000          2340000  570000 Democratic\n6 Texas                 4200000          5000000  800000 Republican\n7 California            8450000          7030000 1420000 Democratic\n8 New York              4760000          3280000 1480000 Democratic\n\n\nIn this sample, the tightest contest is the one with the smallest margin between major-party candidates. These close contests are often the most informative for understanding turnout and vote-share patterns heading into election night."
+    "objectID": "analysis.html#map-of-trump-vote-share-by-county",
+    "href": "analysis.html#map-of-trump-vote-share-by-county",
+    "title": "North Carolina 2024 Presidential Results Map",
+    "section": "Map of Trump vote share by county",
+    "text": "Map of Trump vote share by county\n\n\n\n\n\n\n\n\n\n\n\nRead the map\n\n\nThe county map shows the general pattern of vote strength across North Carolina in 2024. Darker red counties indicate a larger share of the two-party vote for Donald J. Trump, while blue counties show stronger support for Kamala D. Harris. The layered presentation keeps the information easy to read while maintaining a cleaner depth display."
   }
 ]

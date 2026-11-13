@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2026 Election Analysis – Techne Fall 2026</title>
+<title>North Carolina 2024 Presidential Results Map – Techne Fall 2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,6 +75,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -122,9 +123,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#total-votes-by-party" id="toc-total-votes-by-party" class="nav-link active" data-scroll-target="#total-votes-by-party">Total votes by party</a></li>
-  <li><a href="#state-by-state-comparison" id="toc-state-by-state-comparison" class="nav-link" data-scroll-target="#state-by-state-comparison">State-by-state comparison</a></li>
-  <li><a href="#closest-races" id="toc-closest-races" class="nav-link" data-scroll-target="#closest-races">Closest races</a></li>
+  <li><a href="#county-level-summary" id="toc-county-level-summary" class="nav-link active" data-scroll-target="#county-level-summary">County-level summary</a></li>
+  <li><a href="#map-of-trump-vote-share-by-county" id="toc-map-of-trump-vote-share-by-county" class="nav-link" data-scroll-target="#map-of-trump-vote-share-by-county">Map of Trump vote share by county</a></li>
   </ul>
 </nav>
     </div>
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">2026 Election Analysis</h1>
+<h1 class="title">North Carolina 2024 Presidential Results Map</h1>
 </div>
 
 
@@ -150,74 +150,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This brief analysis summarizes a small sample of 2026 election results across a set of states. The goal is to compare vote totals by party and state, and to see which states are the closest contests.</p>
-<section id="total-votes-by-party" class="level2">
-<h2 class="anchored" data-anchor-id="total-votes-by-party">Total votes by party</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 2
-  party         votes
-  &lt;chr&gt;         &lt;dbl&gt;
-1 Democratic 30830000
-2 Republican 28710000</code></pre>
+<p>This map uses the official North Carolina State Board of Elections precinct-level results file for the 2024 general election. I aggregated the county totals for the two major-party presidential candidates and mapped the county-level Trump vote share across the state.</p>
+<div class="metric-grid">
+<div class="metric-card">
+<pre><code>&lt;span class="metric-value"&gt;100&lt;/span&gt;
+&lt;div class="metric-label"&gt;Counties&lt;/div&gt;
+&lt;p&gt;North Carolina counties represented in the county-level map summary.&lt;/p&gt;</code></pre>
+</div>
+<div class="metric-card">
+<pre><code>&lt;span class="metric-value"&gt;2&lt;/span&gt;
+&lt;div class="metric-label"&gt;Candidates&lt;/div&gt;
+&lt;p&gt;Focus on the major-party presidential vote split between Trump and Harris.&lt;/p&gt;</code></pre>
+</div>
+<div class="metric-card">
+<pre><code>&lt;span class="metric-value"&gt;2024&lt;/span&gt;
+&lt;div class="metric-label"&gt;Election year&lt;/div&gt;
+&lt;p&gt;Official general election data downloaded directly from the NCSBE archive.&lt;/p&gt;</code></pre>
 </div>
 </div>
+<section id="county-level-summary" class="level2">
+<h2 class="anchored" data-anchor-id="county-level-summary">County-level summary</h2>
+</section>
+<section id="map-of-trump-vote-share-by-county" class="level2">
+<h2 class="anchored" data-anchor-id="map-of-trump-vote-share-by-county">Map of Trump vote share by county</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="analysis_files/figure-html/party-bar-chart-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="analysis_files/figure-html/county-map-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-</section>
-<section id="state-by-state-comparison" class="level2">
-<h2 class="anchored" data-anchor-id="state-by-state-comparison">State-by-state comparison</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 8 × 5
-  state        total_votes democratic_votes republican_votes  margin
-  &lt;chr&gt;              &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt;
-1 California      15480000          8450000          7030000 1420000
-2 Texas            9200000          4200000          5000000 -800000
-3 New York         8040000          4760000          3280000 1480000
-4 Florida          6960000          3200000          3760000 -560000
-5 Pennsylvania     6080000          3120000          2960000  160000
-6 Illinois         5250000          2910000          2340000  570000
-7 Georgia          5070000          2480000          2590000 -110000
-8 Arizona          3460000          1710000          1750000  -40000</code></pre>
+<div class="panel-card">
+<h3 class="anchored">
+Read the map
+</h3>
+<p>
+The county map shows the general pattern of vote strength across North Carolina in 2024. Darker red counties indicate a larger share of the two-party vote for Donald J. Trump, while blue counties show stronger support for Kamala D. Harris. The layered presentation keeps the information easy to read while maintaining a cleaner depth display.
+</p>
 </div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="analysis_files/figure-html/state-plot-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="closest-races" class="level2">
-<h2 class="anchored" data-anchor-id="closest-races">Closest races</h2>
-<p>The closest races are the ones with the smallest margins between the Democratic and Republican candidates.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 8 × 5
-  state        democratic_votes republican_votes  margin winner    
-  &lt;chr&gt;                   &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;     
-1 Arizona               1710000          1750000   40000 Republican
-2 Georgia               2480000          2590000  110000 Republican
-3 Pennsylvania          3120000          2960000  160000 Democratic
-4 Florida               3200000          3760000  560000 Republican
-5 Illinois              2910000          2340000  570000 Democratic
-6 Texas                 4200000          5000000  800000 Republican
-7 California            8450000          7030000 1420000 Democratic
-8 New York              4760000          3280000 1480000 Democratic</code></pre>
-</div>
-</div>
-<p>In this sample, the tightest contest is the one with the smallest margin between major-party candidates. These close contests are often the most informative for understanding turnout and vote-share patterns heading into election night.</p>
 
 
 </section>

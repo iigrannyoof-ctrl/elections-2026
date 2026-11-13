@@ -2,12 +2,61 @@
 title: "Techne Fall 2026"
 ---
 
-This project highlights a compact election analysis for the 2026 cycle using a small dataset of state-level vote totals.
+<div class="hero">
+  <div class="hero-panel">
+    <div class="hero-tag">Election intelligence</div>
+    <h1>North Carolina elections, organized into a clear visual story.</h1>
+    <p>Explore turnout, county-level vote share, and political patterns in a polished dashboard built for quick reading and presentation. This project turns raw election data into an easy-to-follow narrative.</p>
+    <div class="action-row">
+      <a class="action-button primary" href="analysis.html">Open the analysis</a>
+      <a class="action-button secondary" href="about.html">About this project</a>
+    </div>
+    <div class="depth-stack">
+      <div class="depth-box">
+        <strong>Contests</strong>
+        <span>2024</span>
+      </div>
+      <div class="depth-box">
+        <strong>Units</strong>
+        <span>100+ counties</span>
+      </div>
+      <div class="depth-box">
+        <strong>Focus</strong>
+        <span>Map + share</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-## Overview
+<div class="metric-grid">
+  <div class="metric-card">
+    <span class="metric-value">3</span>
+    <div class="metric-label">Major views</div>
+    <p>Home, analysis, and project background are organized into a simple website flow.</p>
+  </div>
+  <div class="metric-card">
+    <span class="metric-value">1</span>
+    <div class="metric-label">Live map</div>
+    <p>The analysis page includes a county-level map built from official NCSBE election data.</p>
+  </div>
+  <div class="metric-card">
+    <span class="metric-value">24/7</span>
+    <div class="metric-label">Readable design</div>
+    <p>Clean contrast, layered panels, and depth styling make the results easier to scan.</p>
+  </div>
+</div>
 
-- Compare total votes by party
-- Review state-by-state vote totals
-- Identify the closest races in the sample
-
-The analysis page summarizes the results and includes clear charts for easy comparison. Use the navigation bar to explore the full report or read more about the project.
+<div class="feature-grid">
+  <div class="feature-card">
+    <h3>Quick comparison</h3>
+    <p>Break down electoral patterns by county and contest so differences are easy to see at a glance.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Color-coded story</h3>
+    <p>Use a clear red-blue palette to communicate stronger support and relative vote share across regions.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Clean depth display</h3>
+    <p>Layered cards, soft shadows, and glassy surfaces add visual depth without losing readability.</p>
+  </div>
+</div>

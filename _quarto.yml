@@ -16,7 +16,12 @@ website:
 format:
   html:
     theme: cosmo
+    css: styles.css
     toc: true
 
+execute:
+  echo: false
+  warning: false
+  message: false
 
 

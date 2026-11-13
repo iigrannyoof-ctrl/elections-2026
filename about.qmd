@@ -2,6 +2,22 @@
 title: "About"
 ---
 
-This site is a simple Quarto website built around election analysis for the Techne Fall 2026 course project. The data file includes a small sample of state-level vote totals and turnout percentages for a fictional 2026 race snapshot.
+<div class="panel-card">
+  <h3>Project purpose</h3>
+  <p>This website demonstrates how a clean data story can be built around election results. The design emphasizes clarity, readability, and a polished presentation so that maps and summaries feel easy to interpret.</p>
+</div>
 
-The goal is to show how a tidy data workflow can be used to summarize, visualize, and compare election results without needing a large production dataset.
+<div class="feature-grid">
+  <div class="feature-card">
+    <h3>Data source</h3>
+    <p>Official North Carolina State Board of Elections results files are used for the county-level map in the analysis section.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Design goals</h3>
+    <p>The site uses layered panels, stronger color contrast, and a contrast-friendly layout to improve the visual depth of the experience.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Tools</h3>
+    <p>Quarto, R, and tidyverse are used to transform raw election data into a readable site with polished visuals.</p>
+  </div>
+</div>
